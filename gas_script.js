@@ -3,9 +3,15 @@ const categorySelect2 = document.getElementById("category-select-2");
 const displayButton = document.getElementById("display-button");
 const displayedImage = document.getElementById("displayed-image");
 const reverseButton = document.getElementById("reverse-button");
-const reversedImage = document.getElementById("reversed-image");
 let categoryLabel1 = document.getElementById("category-label-1");
 let categoryLabel2 = document.getElementById("category-label-2");
+const content = document.getElementsByClassName("content")[0];
+const splashImage = document.getElementById("splashbg-img")
+
+splashImage.addEventListener("click", function() {
+  content.style.display = "block"
+  splashImage.style.display = "none"
+});
 
 reverseButton.addEventListener("click", function() {
     const temp = categoryLabel1.textContent;
